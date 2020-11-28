@@ -4,88 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primera pagina web</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<style>
-    /* *{
-    border: solid 1px #000;
-} */
-
-body{
-    /* estable el ancho de 1200 y el tamano se preserva aunque se cambie le tamano del navegador */
-    width: 1200px;
-    min-width: 1200px;
-}
-
-.noticias{
-    font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
-    text-align: center;
-    background-color: #f8c1c1;
-}
-.noticias__principal-title{ 
-    text-align: left;
-}
-
-.noticias__card{ 
-    /* los cuadritos queda en una sola linea */
-    display: inline-block; 
-    vertical-align: middle;
-    text-align: left;
-    border-style: ridge;
-    border-radius: 6px;
-    border-color: #eea6a6;
-    /*los cuadritos quedan de dos en dos, cada cuadro llena caso el 50%, automaticamente se hace el salto de line :))) mala */
-    width: 40%;
-    margin-top: 10px;
-    margin-right: 7px;
-    text-align: center;
-    width: 470px;
-    height: 425px;
-    padding-right: 5px;
-    padding-left: 2px;
-    /* background-color: #D4F0F0; */
-}
-
-.noticias__card__container{
-    /* desalinea el texto y solo queda la imagen centrada y el texto justificado */
-    text-align: justify;
-    margin: auto ; 
-    margin-bottom: 0px;
-    padding-right: 2px;
-    padding-left: 5px;
-}
-
-.noticias__card__title{
-    padding-right: 2px;
-    padding-left: 5px;
-}
-
-.noticias__card__button {
-    /* centra el boton */
-    margin:auto ;
-    display:block;
-    /* ** */
-    background-color:rgb(0,0,0);
-    /* hace el boton al ancho */
-    width: 100%;
-    border: 0;
-    /* redondear boton */    
-    border-radius: 3px;
-    color: white;
-    /* que salga la manita */
-    cursor: pointer;
-    font-size: 14px; 
-    padding: 0;
-    height: 20px;
-}
-/* quitar lineado del link */
-.noticias__card a{
-    text-decoration: none;
-}
-
-</style>
 <body>
     <div class="noticias" id="news">
         <h2 class="noticias__principal-title">Noticias</h2>
