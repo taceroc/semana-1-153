@@ -18,6 +18,7 @@ body{
     text-align: left;
 }
 
+
 .noticias__card{ 
     /* los cuadritos queda en una sola linea */
     display: inline-block; 
@@ -27,7 +28,6 @@ body{
     border-radius: 6px;
     border-color: #eea6a6;
     /*los cuadritos quedan de dos en dos, cada cuadro llena caso el 50%, automaticamente se hace el salto de line :))) mala */
-    width: 40%;
     margin-top: 10px;
     margin-right: 7px;
     text-align: center;
