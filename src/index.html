@@ -11,6 +11,7 @@
 } */
 
 body{
+    /* estable el ancho de 1200 y el tamano se preserva aunque se cambie le tamano del navegador */
     width: 1200px;
     min-width: 1200px;
 }
@@ -18,11 +19,14 @@ body{
 .noticias{
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-}
-.noticias .row{ 
     text-align: center;
+    background-color: #f8c1c1;
 }
-.noticias .column{ 
+.noticias__principal-title{ 
+    text-align: left;
+}
+
+.noticias__card{ 
     /* los cuadritos queda en una sola linea */
     display: inline-block; 
     vertical-align: middle;
@@ -30,22 +34,19 @@ body{
     border-style: ridge;
     border-radius: 6px;
     border-color: #eea6a6;
-    /*los cuadritos quedan de dos en dos */
+    /*los cuadritos quedan de dos en dos, cada cuadro llena caso el 50%, automaticamente se hace el salto de line :))) mala */
     width: 40%;
     margin-top: 10px;
     margin-right: 7px;
-}
-
-.noticias .card{
-    /* centra todo lo del cuadro, pero yo solo quiero centra la imagen */
     text-align: center;
     width: 470px;
-    height: 406px;
-    
+    height: 425px;
+    padding-right: 5px;
+    padding-left: 2px;
     /* background-color: #D4F0F0; */
 }
 
-.noticias .container{
+.noticias__card__container{
     /* desalinea el texto y solo queda la imagen centrada y el texto justificado */
     text-align: justify;
     margin: auto ; 
@@ -54,12 +55,12 @@ body{
     padding-left: 5px;
 }
 
-.noticias .title{
+.noticias__card__title{
     padding-right: 2px;
     padding-left: 5px;
 }
 
-.noticias .button {
+.noticias__card__button {
     /* centra el boton */
     margin:auto ;
     display:block;
@@ -76,10 +77,9 @@ body{
     font-size: 14px; 
     padding: 0;
     height: 20px;
-    /* margin :0 0 0 0; */
 }
 /* quitar lineado del link */
-a{
+.noticias__card a{
     text-decoration: none;
 }
 
@@ -87,54 +87,44 @@ a{
 </style>
 <body>
     <div class="noticias" id="news">
-        <h2>Noticias</h2>
-
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <h2 class="title">“Creo que Egan Bernal le ha dado una lección muy sabia a cada ciclista"</h2>
+        <h2 class="noticias__principal-title">Noticias</h2>
+        
+            <div class="noticias__card">
+                    <h2 class="noticias__card__title">“Creo que Egan Bernal le ha dado una lección muy sabia a cada ciclista"</h2>
                     <img src="https://e00-co-marca.uecdn.es/claro/assets/multimedia/imagenes/2020/11/27/16064915311412.jpg"
                         alt="" style="width:60%">
-                    <div class="container" >
+                    <div class="noticias__card__container" >
                         <p style = "height: 107px;">Egan Bernal no ha disfrutado de su mejor año en este 2020 después de conquistar el Tour de Francia del año pasado. Sin embargo, uno de los directores del Jumbo Visma ha alabado su papel en la Grande Boucle de esta temporada dejando claro la gran lección que dio a pesar de sus malos días.</p>
-                        <p style =" margin-top: 0px; margin-bottom: 0px; vertical-align: bottom;"><a href="https://co.marca.com/claro/ciclismo/2020/11/27/5fc11dbb22601d205d8b4688.html" target="_blank"><button class="button">Noticia completa</button></a></p>
+                        <p style =" margin-top: 0px; margin-bottom: 0px; vertical-align: bottom;"><a href="https://co.marca.com/claro/ciclismo/2020/11/27/5fc11dbb22601d205d8b4688.html" target="_blank"><button class="noticias__card__button">Noticia completa</button></a></p>
                     </div>
-                </div>
             </div>
-            <div class="column">
-                <div class="card">
-                    <h2 class="title">Daniel Martínez, nominado a prestigiosos premios de ciclismo</h2>
+            <div class="noticias__card">
+                    <h2 class="noticias__card__title">Daniel Martínez, nominado a prestigiosos premios de ciclismo</h2>
                     <img src="https://www.eltiempo.com/files/article_main/uploads/2020/09/11/5f5b953b0dc3b.jpeg"
                         alt="" style="width:66%">
-                    <div class="container">
+                    <div class="noticias__card__container">
                         <p style = "height: 110px;">El colombiano Daniel Martínez ha sido nominado al Vélo D’Or, galardón que entrega Vélo Magazine al mejor ciclista de la temporada 2020.</p>
-                        <p style =" margin-top: 0px; margin-bottom: 0px;"><a href="https://www.eltiempo.com/deportes/ciclismo/ciclista-colombiano-daniel-martinez-es-candidato-al-velo-d-or-2020-550624" target="_blank"><button class="button">Noticia completa</button></a></p>
+                        <p style =" margin-top: 0px; margin-bottom: 0px;"><a href="https://www.eltiempo.com/deportes/ciclismo/ciclista-colombiano-daniel-martinez-es-candidato-al-velo-d-or-2020-550624" target="_blank"><button class="noticias__card__button">Noticia completa</button></a></p>
                     </div>
-                </div>
             </div>
-            <div class="column">
-                <div class="card">
-                    <h2 class="title">¿El sucesor de Nairo? ‘Supermán’ López, gran fichaje del Movistar Team</h2>
+            <div class="noticias__card">
+                    <h2 class="noticias__card__title">¿El sucesor de Nairo? ‘Supermán’ López, gran fichaje del Movistar Team</h2>
                     <img src="https://www.futbolred.com/files/article_main/uploads/2020/08/29/5f4aa03556fae.jpeg"
                         alt="" style="width:60%">
-                    <div class="container">
+                    <div class="noticias__card__container">
                         <p style = "height: 126px;">El colombiano Miguel Ángel 'Supermán' López, uno de los corredores más destacados del pelotón internacional, ha fichado por el Movistar, informó el club español en un comunicado. El corredor cafetero es el quinto refuerzo para la próxima temporada, tras Iván García Cortina, el austríaco Gregor Muhlberger, el puertorriqueño Abner González y Gonzalo Serrano.</p>
-                        <p style =" margin-top: 0px; margin-bottom: 0px; height: 160px;"><a href="https://www.futbolred.com/fuera-del-futbol/ciclismo-miguel-superman-lopez-nuevo-ciclista-del-movistar-team-127733" target="_blank"><button class="button" >Noticia completa</button></a></p>
+                        <p style =" margin-top: 0px; margin-bottom: 0px; height: 160px;"><a href="https://www.futbolred.com/fuera-del-futbol/ciclismo-miguel-superman-lopez-nuevo-ciclista-del-movistar-team-127733" target="_blank"><button class="noticias__card__button" >Noticia completa</button></a></p>
                     </div>
-                </div>
             </div>
-            <div class="column">
-                <div class="card">
-                    <h2 class="title">Camargo, de fracturarse el fémur a ganar la Vuelta a Colombia</h2>
+            <div class="noticias__card">
+                    <h2 class="noticias__card__title">Camargo, de fracturarse el fémur a ganar la Vuelta a Colombia</h2>
                     <img src="https://www.eltiempo.com/files/article_main/files/crop/uploads/2020/11/17/5fb448333bd55.r_1606259856651.0-0-1280-637.jpeg"
                         alt="" style="width:60%">
-                    <div class="container">
+                    <div class="noticias__card__container">
                         <p>Se disputaba el circuito de Ramiriquí, Boyacá, en el 2016. El lote iba compacto y la carrera promediaba su recorrido. Un reductor de velocidad fue el culpable de una fuerte caída. Tras varios meses de recuperación, y duda; logró participar de nuevo en carreras. Ganó la Vuelta Colombia y la prueba juvenil mas importante del país en un mismo año, una hazaña que pocos han logrado.</p>
-                        <p style =" margin-top: 0px; margin-bottom: 0px;"><a href="https://www.eltiempo.com/deportes/ciclismo/vuelta-a-colomboa-2020-diego-camargo-perfil-del-campeon-550358" target="_blank"><button class="button" >Noticia completa</button></a></p>
+                        <p style =" margin-top: 0px; margin-bottom: 0px;"><a href="https://www.eltiempo.com/deportes/ciclismo/vuelta-a-colomboa-2020-diego-camargo-perfil-del-campeon-550358" target="_blank"><button class="noticias__card__button" >Noticia completa</button></a></p>
                     </div>
-                </div>
             </div>
-        </div>
     </div>
 
 
