@@ -2,25 +2,33 @@
     border: solid 1px #000;
 } */
 
-body{
+/* body{
     /* estable el ancho de 1200 y el tamano se preserva aunque se cambie le tamano del navegador */
+    /*
     width: 1200px;
     min-width: 1200px;
 }
+body p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .noticias{
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /*
     width: 100%;
     text-align: center;
     background-color: #f8c1c1;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 .noticias__principal-title{ 
-    text-align: left;
+    text-align: center;
 }
 
 
 .noticias__card{ 
     /* los cuadritos queda en una sola linea */
+    /*
     display: inline-block; 
     vertical-align: middle;
     text-align: left;
@@ -28,6 +36,7 @@ body{
     border-radius: 6px;
     border-color: #eea6a6;
     /*los cuadritos quedan de dos en dos, cada cuadro llena caso el 50%, automaticamente se hace el salto de line :))) mala */
+    /*
     margin-top: 10px;
     margin-right: 7px;
     text-align: center;
@@ -36,10 +45,12 @@ body{
     padding-right: 5px;
     padding-left: 2px;
     /* background-color: #D4F0F0; */
+    /*
 }
 
 .noticias__card__container{
     /* desalinea el texto y solo queda la imagen centrada y el texto justificado */
+    /*
     text-align: justify;
     margin: auto ; 
     margin-bottom: 0px;
@@ -54,23 +65,89 @@ body{
 
 .noticias__card__button {
     /* centra el boton */
+    /*
     margin:auto ;
     display:block;
     /* ** */
+    /*
     background-color:rgb(0,0,0);
     /* hace el boton al ancho */
+    /*
     width: 100%;
+    /* border: none; */
+    /*
     border: 0;
-    /* redondear boton */    
+    /* redondear boton */ 
+    /*  
     border-radius: 3px;
     color: white;
     /* que salga la manita */
+    /*
     cursor: pointer;
     font-size: 14px; 
     padding: 0;
     height: 20px;
-}
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
 /* quitar lineado del link */
+/*
 .noticias__card a{
     text-decoration: none;
+} */
+
+
+body{
+    /* estable el ancho de 1200 y el tamano se preserva aunque se cambie le tamano del navegador */
+    width: 1200px;
+    min-width: 1200px;
+}
+body p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.noticias{
+    background-color: #f8c1c1
+}
+
+.noticias__column{
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.noticias__column p{
+    text-align: justify;
+}
+
+.noticias__card{
+    border-style: ridge;
+    border-radius: 6px;
+    border-color: #eea6a6;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    padding-bottom: 8px;
+    width:50%;
+    height: 50%;
+}
+
+.noticias__title{
+    text-align: center;
+}
+
+.noticias__card__container p{
+    height: 120px;
+}
+
+.noticias__card__container>a:hover{
+    font-size: 10px;
+}
+
+.noticias__card__container> a{
+    font-size: 16px;
+    text-decoration: none;
+    color: darkcyan
 }
