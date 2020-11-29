@@ -1,0 +1,16 @@
+.equipo{
+    display: flex;
+    background-color: salmon;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.titulo__equipo{
+    text-align: center;
+}
+.miembros__equipo{
+    border: black 1px solid;
+}
+.fotos__miembros{
+    border: black 2px solid;
+}
