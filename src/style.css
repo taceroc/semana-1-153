@@ -1,12 +1,12 @@
-/* *{
-    border: solid 1px #000;
-} */
 
 body{
     /* estable el ancho de 1200 y el tamano se preserva aunque se cambie le tamano del navegador */
     width: 1200px;
     min-width: 1200px;
+    text-align:center;
+    margin:0 auto;
 }
+
 body p{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -56,4 +56,99 @@ body p{
     font-size: 16px;
     text-decoration: none;
     color: darkcyan
+}
+
+
+.servicios{
+    background-color: lightcyan;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+.servicios__contenedor{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px violet solid;
+}
+.servicios__contenedor>a:hover{
+    font-size: 10px;
+}
+
+.servicios__contenedor>a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: darkred;
+}
+.servicios__contenedor__titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.imagenes__servicios{
+    border: 5px black solid;
+}
+.titulo__services{ 
+    text-align: center;
+
+
+.menu-principal{
+    list-style-type:none;
+    display:inline-flex;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.menu-principal > li{
+
+    font-weight: 600;
+    font-size: 20px;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#FFD27D;
+    border-color: #d8d8d8;
+    border-width: 0;
+    border-radius:5px;
+
+}
+.menu-principal > li:hover{
+    background-color:#aa7d29;
+    cursor: pointer;
+}
+.menu-principal > li >a{
+    text-decoration:none;
+    color:#aa3333;
+}
+.nav-image{
+    text-align:center;
+}
+.nav-image > img{
+    display: block;
+    margin: auto;
+}
+
+.footer_secundario{
+    display:flex;
+    
+}
+.footer-principal > div{
+    
+    justify-content:center;
+}
+.footer_secundario > div{
+    /*border:1px solid;*/
+    padding:5px;
+    padding-top:0;
+    padding-bottom: 0;
+    margin:5px;
+    background-color:rgb(176, 253, 180);
+}
+.footer_left{
+    text-align:left ;
+    max-width: 800px;
+}
+.footer_left > div{
+    text-align:justify ;
+
 }
