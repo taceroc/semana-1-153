@@ -1,7 +1,39 @@
+
 body{
     text-align:center;
     margin:0 auto;
 }
+.servicios{
+    background-color: lightcyan;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    
+}
+.servicios__contenedor{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 1px violet solid;
+}
+.servicios__contenedor>a:hover{
+    font-size: 10px;
+}
+
+.servicios__contenedor>a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: darkred;
+}
+.servicios__contenedor__titulo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.imagenes__servicios{
+    border: 5px black solid;
+}
+.titulo__services{ 
+    text-align: center;
+
+
 .menu-principal{
     list-style-type:none;
     display:inline-flex;
@@ -62,4 +94,5 @@ body{
 }
 .footer_left > div{
     text-align:justify ;
+
 }
