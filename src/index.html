@@ -6,9 +6,103 @@
     <title>Mi primera pagina web</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main>
-        <!-- equipo -->
+        
+<header>       
+<nav class="inicio">
+<ul class="menu-principal">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#services" >Servicios</a></li>
+    <li><a href="#news">Noticias</a></li>
+    <li><a href="#team">Equipo</a></li>
+    
+</ul>
+</nav> 
+<div class="nav-image">
+<img src="./imagenes/banner.jpg" alt="Ciclismo Profesional">
+</div> 
+</header>
+
+
+    <div>
+        <h2 class="titulo__services">Servicios</h2>
+    </div>
+ <!-- servicios -->
+ <section id="services" class="servicios">
+    <div class="servicios__contenedor">
+        <h2 class="servicios__contenedor__titulo">VENTA DE BICICLETAS</h2>
+        <img class="imagenes__servicios" src="imagenes/bici.jpg" width="250" height="250" alt="Bicicleta">
+        <p>Venta de bicicletas en Colombia, bicicletas de ruta, bicicletas de montaña, bicicletas todo terreno. Envío gratis.</p>
+        <a href="https://www.optimusbikes.com/" target="_blank">COMPRAR</a>
+    </div>
+    <div class="servicios__contenedor">
+        <h2 class="servicios__contenedor__titulo">BICITOUR</h2>
+        <img class="imagenes__servicios" src="imagenes/bicitour.jpg" width="350" height="250" alt="">
+        <p>Recorre la ciudad montando en nuestras bicicletas llenas de alegría, con total seguridad y acompañado de nuestros expertos bici guías con quienes conoceras diversos lugares de la ciudad.</p>
+        <a href="http://www.caminatasbogota.com/tours/bicitour-tour-en-bicicleta-por-bogota-y-sus-pueblos-cercanos/" target="_blank">MAS INFO..</a>
+    </div>
+    <div class="servicios__contenedor">
+        <h2 class="servicios__contenedor__titulo">ACCESORIOS</h2>
+        <img class="imagenes__servicios" src="imagenes/accesorios.jpg" width="350" height="250" alt="">
+        <p>Encuentra Todo Tipo de silines, Manubrios, Zapatillas, Herramientas y Mucho más. Encuentra lo Necesario en Accesorios para Ciclismo.</p>
+        <a href="https://dscbike.com/collections/accesorios" target="_blank">COMPRAR</a>
+    </div>
+</section>
+  
+   <h2 class="noticias__title">Noticias</h2>
+    <section class="noticias" id="news">
+        <!-- primera seccion de noticias, compuesta por dos horizontales -->
+        <div class="noticias__row">
+            
+            <div class="noticias__column">
+                <!-- primera noticia -->
+                <div class="noticias__card">
+                    <h2 class="noticias__card__title">“Creo que Egan Bernal le ha dado una lección muy sabia a cada ciclista"</h2>
+                    <div class="noticias__card__container" >    
+                        <img src="https://e00-co-marca.uecdn.es/claro/assets/multimedia/imagenes/2020/11/27/16064915311412.jpg" alt="eganbernal" width="400" height="220">
+                        <p>Egan Bernal no ha disfrutado de su mejor año en este 2020 después de conquistar el Tour de Francia del año pasado. Sin embargo, uno de los directores del Jumbo Visma ha alabado su papel en la Grande Boucle de esta temporada dejando claro la gran lección que dio a pesar de sus malos días.</p>
+                        <a  href="https://co.marca.com/claro/ciclismo/2020/11/27/5fc11dbb22601d205d8b4688.html" target="_blank">Noticia completa</a>
+                    </div>
+                </div>
+                <!-- segunda noticia -->  
+                <div class="noticias__card">
+                    <h2 class="noticias__card__title">Daniel Martínez, nominado a prestigiosos premios de ciclismo</h2>
+                    <div class="noticias__card__container">
+                        <img src="https://www.eltiempo.com/files/article_main/uploads/2020/09/11/5f5b953b0dc3b.jpeg" alt="" width="400" height="220">
+                        <p>El colombiano Daniel Martínez ha sido nominado al Vélo D’Or, galardón que entrega Vélo Magazine al mejor ciclista de la temporada 2020.</p>
+                        <a href="https://www.eltiempo.com/deportes/ciclismo/ciclista-colombiano-daniel-martinez-es-candidato-al-velo-d-or-2020-550624" target="_blank">Noticia completa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- segunda seccion de noticias, compuesta por dos horizontales -->
+        <div class="noticias__row">
+            <div class="noticias__column">
+                <!-- tercera noticia -->
+                <div class="noticias__card">
+                    <h2 class="noticias__card__title">¿El sucesor de Nairo? ‘Supermán’ López, gran fichaje del Movistar Team</h2>
+                    <div class="noticias__card__container" >    
+                        <img src="https://www.futbolred.com/files/article_main/uploads/2020/08/29/5f4aa03556fae.jpeg" alt="" width="400" height="220">
+                        <p>El colombiano Miguel Ángel 'Supermán' López, uno de los corredores más destacados del pelotón internacional, ha fichado por el Movistar, informó el club español en un comunicado. El corredor cafetero es el quinto refuerzo para la próxima temporada, tras Iván García Cortina, el austríaco Gregor Muhlberger, el puertorriqueño Abner González y Gonzalo Serrano.</p>
+                        <a href="https://www.futbolred.com/fuera-del-futbol/ciclismo-miguel-superman-lopez-nuevo-ciclista-del-movistar-team-127733" target="_blank">Noticia completa</a>
+                    </div>
+                </div>
+                <!-- cuarta noticia -->  
+                <div class="noticias__card">
+                    <h2 class="noticias__card__title">Camargo, de fracturarse el fémur a ganar la Vuelta a Colombia</h2>
+                    <div class="noticias__card__container">
+                        <img src="https://www.eltiempo.com/files/article_main/files/crop/uploads/2020/11/17/5fb448333bd55.r_1606259856651.0-0-1280-637.jpeg" alt="" width="400" height="220">
+                        <p>Se disputaba el circuito de Ramiriquí, Boyacá, en el 2016. El lote iba compacto y la carrera promediaba su recorrido. Un reductor de velocidad fue el culpable de una fuerte caída. Tras varios meses de recuperación, y duda; logró participar de nuevo en carreras. Ganó la Vuelta Colombia y la prueba juvenil mas importante del país en un mismo año, una hazaña que pocos han logrado.</p>
+                        <a href="https://www.eltiempo.com/deportes/ciclismo/vuelta-a-colomboa-2020-diego-camargo-perfil-del-campeon-550358" target="_blank">Noticia completa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+ <!-- equipo -->
         <div>
             <h2 class="titulo__equipo">Miembros</h2>
         </div>
@@ -30,7 +124,54 @@
                 <p>Ingeniero Industrial, Universidad de Cundinamarca, 27 años, pasatiempo: viajar.</p>
             </div>
 
-        </section>
-    </main>
+
+       </section>  
+
+
+   
+<footer>
+    <div class="footer-principal">
+        <h2>Informaci&oacute;n de Contacto</h2>
+      <div class="footer_secundario">
+        
+
+        <div class="footer_left">
+            <div>
+                 <h3>Motivante de desarrollo:</h3><span>El motivante principal de este proyecto es realizar un aprendizaje teórico-práctico
+                      que conlleve al desarrollo de habilidades de diseño y desarrollo web, complementando la formación
+                     iniciada en el proyecto MisiónTIC 2022 (ciclo 1 y ciclo 2). Adicional, establecer una red de programadores colombianos y
+                     a través del trabajo colaborativo complementen el conocimiento con habilidades intrapersonales maximizando
+                     su formación profesional.
+                 </span>
+                 <p><b>Sitio Git Hub: </b><a href="https://github.com/taceroc/semana-1-153.git" target="_blank" >https://github.com/taceroc/semana-1-153.git</a></p>
+                 
+            </div>
+            
+        </div>
+        <div class="footer_righ">
+            <div>
+                <h3>Contacto</h3>
+                    <p>
+                        <span><b>Tatiana Acero Cuellar</b></span>
+                        <br>
+                        <span style="font-size: 14px;">Desarrollo sección Noticias</span>
+                    </p>
+                    <p>
+                        <span><b>Daniel Picon Agudelo</b></span>
+                        <br>
+                        <span style="font-size: 14px;">Desarrollo sección servicios y sección del equipo</span>
+                    </p>                    <p>
+                        <span><b>Cristian Camilo Parra Parra</b></span>
+                        <br>
+                        <span style="font-size: 14px;">Desarrollo cabecera y pie de página</span>
+                    </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+</footer>
+
 </body>
 </html>
