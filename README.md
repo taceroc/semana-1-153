@@ -29,11 +29,11 @@ El proyecto, deberá manejarse versionado en un repositorio remoto en github, en
 - Creación de repositorio.
 - Creación de proyecto.
 - Creación de tareas:
-  Cada tarea se desarrolló dentro de una rama del repositorio bajo la inicial ISS#
-  ISS1: Cristian Parra
-  ISS2: Daniel Picón
-  ISS3: Tatiana Acero
-  ISS4: Daniel Picón
+  Cada tarea se desarrolló dentro de una rama del repositorio bajo la inicial ISS
+  - ISS1: Cristian Parra
+  - ISS2: Daniel Picón
+  - ISS3: Tatiana Acero
+  - ISS4: Daniel Picón
 - Desarrollo de cada tarea.
 - Revisión.
 - Pull Request.
