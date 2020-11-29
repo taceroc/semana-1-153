@@ -18,3 +18,32 @@ El proyecto, deberá manejarse versionado en un repositorio remoto en github, en
   El elemento donde están los servicios debe de tener un `id=”team”`
 
 - Sección Footer o pie del sitio: el estudiante deberá crear el pie del sitio web en donde se incluye información de contacto, deberá estar dividido en dos partes, en una se tendrá la información del sitio web como el motivante del desarrollo y el enlace al repositorio de github, y en la otra los contacto de los miembros del equipo con sus nombres y roles. La sección debe de estar en un tag <footer></footer>
+
+-----------
+
+# Documentación
+
+- Reunion del equipo para organización inicial.
+- Elaboración de mockups.
+- División de trabajo.
+- Creación de repositorio.
+- Creación de proyecto.
+- Creación de tareas:
+  Cada tarea se desarrolló dentro de una rama del repositorio bajo la inicial ISS#
+  ISS1: Cristian Parra
+  ISS2: Daniel Picón
+  ISS3: Tatiana Acero
+  ISS4: Daniel Picón
+- Desarrollo de cada tarea.
+- Revisión.
+- Pull Request.
+- Revisión de conflictos.
+- Merge a la rama master.
+- Descarga archivo zip.
+
+# Miembros
+
+- Cristian Parra
+- Daniel Picón
+- Tatiana Acero
+  
